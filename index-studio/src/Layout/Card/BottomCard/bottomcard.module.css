@@ -1,0 +1,55 @@
+.block {
+    position: relative;
+    padding: 2px 12px 12px 12px;
+}
+
+.oldPrice {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: line-through;
+    color: #5A5A5A;
+}
+
+.newPrice {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #2C2C2C;
+}
+
+.title {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2C2C2C;
+}
+
+.locality,.date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8F8F8F;
+}
+
+.blockLocalDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.positionIconCar {
+    position: absolute;
+    top: 0;
+    right: 44px;
+}
+
+.positionIconShield {
+    position: absolute;
+    top: 0;
+    right: 12px;
+}

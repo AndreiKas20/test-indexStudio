@@ -1,0 +1,79 @@
+.card {
+    position: relative;
+    font-size: 0;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 224px;
+}
+
+.card:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+
+.positionIconHart {
+    position: absolute;
+    top: 202px;
+    right: 12px;
+    z-index: 9;
+}
+
+.positionIconGraph {
+    position: absolute;
+    top: 166px;
+    right: 12px;
+    z-index: 9;
+}
+
+.message {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 47px);
+    padding: 5px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background: rgba(44, 44, 44, 0.74);
+    color: #FFF;
+    border-radius: 8px;
+}
+
+
+
+@media all and (max-width: 1279px) {
+    .card:nth-child(4n) {
+        margin-right: 24px;
+    }
+
+    .card:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media all and (max-width: 859px) {
+    .card:nth-child(3n) {
+        margin-right: 24px;
+    }
+
+    .card:nth-child(2n) {
+        margin-right: 0;
+    }
+
+
+}
+
+@media all and (max-width: 611px) {
+    .card {
+        margin-right: 0;
+    }
+    .card:nth-child(3n) {
+        margin-right: 0;
+    }
+}

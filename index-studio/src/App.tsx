@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
+import './assets/css/main.global.css'
+import {Layout} from "./Layout";
 
 function App() {
     return (
-        <div className="App">
-
-        </div>
+       <Layout/>
     );
 }
 

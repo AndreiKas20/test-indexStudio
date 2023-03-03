@@ -6,6 +6,7 @@ import styles from './layout.module.css'
 export function Layout() {
     const [count, setCount] = useState(1)
     const [isLoader, setIsLoader] = useState(true)
+    const [isAll, setIsAll] = useState(false)
     const arr = useGetCard(count)
     useEffect(() => {
         if(arr.length < 1) {
@@ -13,6 +14,12 @@ export function Layout() {
         } else {
             setIsLoader(false)
         }
+        if (arr.length === 100) {
+            setIsAll(true)
+        } else {
+            setIsAll(false)
+        }
+
     }, [arr]);
     return (
         <section className={styles.section}>
@@ -21,10 +28,11 @@ export function Layout() {
             { !isLoader && <ul className={styles.list}>
                 {arr.map(value => <Card key={value.id} cardData={value}/>)}
             </ul>}
-            <button className={styles.btn} onClick={() => {
+            <button disabled={isAll} className={styles.btn} onClick={() => {
                 setCount(v => v + 1)
             }}>Показать еще
             </button>
+            {isAll && <span className={styles.allCard}>Карточек больше нет</span>}
         </section>
     );
 }

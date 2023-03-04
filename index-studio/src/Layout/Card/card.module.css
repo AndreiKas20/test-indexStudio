@@ -39,6 +39,7 @@
     background: rgba(44, 44, 44, 0.74);
     color: #FFF;
     border-radius: 8px;
+    z-index: 9;
 }
 
 
